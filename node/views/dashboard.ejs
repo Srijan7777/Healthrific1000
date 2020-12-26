@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords"
+        content="wrappixel, admin dashboard, html css dashboard, web dashboard, bootstrap 4 admin, bootstrap 4, css3 dashboard, bootstrap 4 dashboard, Ample lite admin bootstrap 4 dashboard, frontend, responsive bootstrap 4 admin template, Ample admin lite dashboard bootstrap 4 dashboard template">
+    <meta name="description"
+        content="Ample Admin Lite is powerful and clean admin dashboard template, inpired from Bootstrap Framework">
+    <meta name="robots" content="noindex,nofollow">
+    <title>Table</title>
+    <link rel="canonical" href="https://www.wrappixel.com/templates/ample-admin-lite/" />
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="plugins/images/favicon.png">
+    <!-- Custom CSS -->
+   <link href="style.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" type="" href="logo - Copy.svg">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
+    <!-- Tailwind Library -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/creativetimofficial/tailwind-starter-kit/compiled-tailwind.min.css" />
+
+</head>
+
+<body>
+    <!-- ============================================================== -->
+    <!-- Preloader - style you can find in spinners.css -->
+    <!-- ============================================================== -->
+    <div class="preloader">
+        <div class="lds-ripple">
+            <div class="lds-pos"></div>
+            <div class="lds-pos"></div>
+        </div>
+    </div>
+    <!-- ============================================================== -->
+    <!-- Main wrapper - style you can find in pages.scss -->
+    <!-- ============================================================== -->
+ 
+  <!-- Navigation -->
+  <nav class="top-0 absolute z-50 w-full flex flex-wrap items-center justify-between px-2 py-3 navbar-expand-lg">
+      <div class="container px-4 mx-auto flex flex-wrap items-center justify-between">
+
+                <!-- Nav Title -->
+                <div class ="logo"> 
+                   <a href="index.html " target="_self"></a>
+                  <img src="logo.png" alt="LOGO" class="logo-style"
+                  style="max-width: 100px;">
+              </div>
+              </a>
+          </div>
+        <!-- Nav Right Side -->
+        <ul class="flex flex-col lg:flex-row list-none lg:ml-auto">
+          <!-- Social Media Button -->
+          <li class="flex items-center">
+            <a class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+              href="Login_Register/register.html">
+              <!-- Icon -->
+             <h3 class="Nav" 
+             style="align-items: flex-end; color: black;">Register</h3>
+            </a>
+          </li>
+          <!-- Social Media Button -->
+          <li class="flex items-center">
+            <a class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+              href="Login_Register/login.html">
+              <!-- Icon -->
+               <h3 class="Nav" 
+             style="align-items: flex-end;color: black;" >Logout</h3>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        google.charts.load('current', {'packages':['line']});
+        google.charts.setOnLoadCallback(drawChart);
+        function drawChart() {
+        var data = new google.visualization.DataTable();
+        data.addColumn('number', 'Day');
+        data.addColumn('number', 'Heart Rate(BPM)');
+        data.addColumn('number', 'Blood Pressure(mmHg)');
+        data.addColumn('number', 'SPO2(%)');
+        data.addColumn('number', 'Temperature(degree celcius)');
+        data.addRows([
+            [1,  66, 88, 88,34.3],
+            [2,  72, 86, 90, 35.6],
+            [3,  76, 92, 92, 34.7],
+            [4,  72, 98, 91, 35.8],
+            [5,  78, 105, 90, 37.6],
+            [6,  88, 100,  95, 37],
+            [7,  86,  108,  86, 35.5],
+            [8,  92,  100, 84, 35.3],
+            [9,  100, 97, 84, 36],
+            [10, 94, 110, 81, 36.6]
+        ]);
+        var options = {
+            width: '100%',
+            height:'100%',
+            axes: {
+            x: {
+                0: {side: 'top'}
+            }
+            }
+        };
+        var chart = new google.charts.Line(document.getElementById('line_top_x'));
+        chart.draw(data, google.charts.Line.convertOptions(options));
+    }
+  </script>
+</head>
+
+<body class="fix-header">
+    <div class="preloader">
+        <svg class="circular" viewBox="25 25 50 50">
+            <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10" />
+        </svg>
+    </div>
+
+   <br> 
+   <br> 
+   <br> 
+   <br> 
+   <br> 
+   <br> 
+        <div id="page-wrapper" style="padding-bottom: 2px;">
+            <div class="container-fluid" style="padding-bottom: 2px;">
+               
+
+                <div class="row">
+                    <div class="col-lg-3 col-sm-4 col-xs-10">
+                        <div class="white-box analytics-info">
+                            <h3 class="box-title">Heart Rate (BPM)</h3>
+                            <ul class="list-inline two-part">
+                                <li>
+                                    <img src="cardiogram.png" alt="Heart Rate" style="padding-left: 15px;">
+                                </li>
+                                <li class="text-center"><span class="text-success">76</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-4 col-xs-10">
+                        <div class="white-box analytics-info">
+                            <h3 class="box-title">Temperature (°C)</h3>
+                            <ul class="list-inline two-part">
+                                <li>
+                                    <img src="temperature.png" alt="Temperature" style="padding-left: 15px;">
+                                </li>
+                                <li class="text-center"><span class="text-purple">36.8</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-4 col-xs-10">
+                        <div class="white-box analytics-info">
+                            <h3 class="box-title">SPO2 (%)</h3>
+                            <ul class="list-inline two-part">
+                                <li>
+                                    <img src="o2.png" alt="SPO2" style="padding-left: 15px;">
+                                </li>
+                                <li class="text-center"><span class="text-info">101</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-4 col-xs-10">
+                        <div class="white-box analytics-info">
+                            <h3 class="box-title">BP (mmHg)</h3>
+                            <ul class="list-inline two-part">
+                                <li>
+                                    <img src="arm.png" alt="BP" style="padding-left: 15px;">
+                                </li>
+                                <li class="text-center"><span class="text-danger">80</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                        <div class="white-box" id="my-chart">
+                            <h3 class="box-title">Vital signs measurement (According to days)</h3>
+                            <div id="line_top_x" style="height: 405px;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ============================================================== -->
+    <!-- End Wrapper -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- All Jquery -->
+    <!-- ============================================================== -->
+    <script src="plugins/bower_components/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap tether Core JavaScript -->
+    <script src="plugins/bower_components/popper.js/dist/umd/popper.min.js"></script>
+    <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/app-style-switcher.js"></script>
+    <script src="plugins/bower_components/jquery-sparkline/jquery.sparkline.min.js"></script>
+    <!--Wave Effects -->
+    <script src="js/waves.js"></script>
+    <!--Menu sidebar -->
+    <script src="js/sidebarmenu.js"></script>
+    <!--Custom JavaScript -->
+    <script src="js/custom.js"></script>
+    <!--This page JavaScript -->
+    <!--chartis chart-->
+    <script src="plugins/bower_components/chartist/dist/chartist.min.js"></script>
+    <script src="plugins/bower_components/chartist-plugin-tooltips/dist/chartist-plugin-tooltip.min.js"></script>
+    <script src="dashboard1.js"></script>
+</body>
+
+</html>
